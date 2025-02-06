@@ -6,6 +6,10 @@
     font-family: 'Montserrat', sans-serif;
     background-color: #1b263b ;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 @font-face {
     font-family: external;
@@ -16,18 +20,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 100px;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    
+    min-height: 80px;
 }
 
 .logo {
     color: white;
     font-size: 50px;
-    padding-left: 40px;
+    padding-left: 15px;
     font-family: external;
 
 }
@@ -35,6 +38,7 @@
 .nav-links {
     list-style: none;
     display: flex;
+    
 }
 
 .nav-links li {
@@ -84,7 +88,7 @@
     width: 380px; 
     height: 380px; 
     border-radius: 50%; 
-   margin-top: 130px;
+   margin-top: 50px;
    object-fit: cover;
   margin-bottom: 80px;
 }
@@ -92,10 +96,9 @@
 #home{
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 60px;
     text-align: center;
     justify-content: center;
-    
     
 }
 .start{
@@ -103,7 +106,6 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   margin-top: 80px;
     
 }
 .intro {
@@ -126,7 +128,7 @@
 }
 
 .botm{
-    margin-top: 15px;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -157,6 +159,28 @@
     background-color: rgb(52, 61, 107); 
     color: white; 
     border-color: rgb(52, 61, 107); 
+}
+
+.head{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    color: white;
+}
+
+.get{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 300; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.abt{
+    font-size: 39px;
+}
+.botm{
+    padding-top: 20px;
 }
 
 
@@ -190,9 +214,7 @@
         margin: 17px 0;
     }
     
-    .logo{
-        padding-left: 0px;
-    }
+   
     .menu-icon {
         display: block;
     }
@@ -201,8 +223,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding:15px;
-        gap:0px;
+        padding-top: 20px;
+        gap: 0px;
+        
     }
 
     .profile {
@@ -210,13 +233,13 @@
         height: 250px;
         margin-bottom: 0px;
         object-fit: cover;
-       margin-bottom: 30px;
+       margin-bottom:-20px;
     }
 
     .start {
         text-align: center;
-        
-
+        margin-top: 65px;
+ 
     }
 
     .name {
