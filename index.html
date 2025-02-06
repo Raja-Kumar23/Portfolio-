@@ -6,18 +6,29 @@
     <title>Raja - Portfolio</title>
     <link rel="icon" href="pp.png">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script> 
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
-        <a href="#" class="logo"><span class="highlight">R</span>aja</a>
+        <a class="logo"> Raja</a>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Contact">Contact</a></li>
         </ul>
-        <div class="menu-icon">&#9776;</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </nav>
+    <section id="home">
+        <img src="pp.png" class="profile">
+        <div class="start">
+        <p class="intro">Hello, I'm</p>
+        <h1 class="name">Raja Kumar</h1>
+        <h2 class="role">Student</h2>
+    <div class="botm">
+            <a href="./assets/resume-example.pdf" class="btncv" download>Download CV</a>
+            <a href="#contact" class="btn ">Contact Info</a>
+        
+    </div>
+    </section>
 </body>
 </html>

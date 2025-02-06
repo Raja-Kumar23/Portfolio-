@@ -4,14 +4,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    background-color: #1b263b ;
 }
 
+@font-face {
+    font-family: external;
+    src: url(mycursive.otf);
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #222831; 
-    padding: 15px 60px;
+    padding: 12px 100px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -21,30 +25,25 @@
 }
 
 .logo {
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
+    color: white;
+    font-size: 50px;
     padding-left: 40px;
+    font-family: external;
+
 }
 
-.highlight {
-    color: #f2290e; 
-    font-size: 40px;
-   
-}
 .nav-links {
     list-style: none;
     display: flex;
 }
 
 .nav-links li {
-    margin-left: 60px;
+    margin-left: 65px;
 }
 .nav-links a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     position: relative;
     padding-bottom: 5px;
@@ -58,12 +57,12 @@
     bottom: 0; 
     width: 0;
     height: 2px;
-    background-color: #ff4b5c; 
+    background-color: #778da9 ; 
     transition: width 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-    color: #ff4b5c; 
+    color: c; 
 }
 
 .nav-links a:hover::after {
@@ -75,9 +74,98 @@
 .menu-icon {
     display: none;
     font-size: 28px;
-    color: #fff;
+    color: white;
     cursor: pointer;
+    position: absolute;
+    right: 30px;
 }
+
+.profile {
+    width: 380px; 
+    height: 380px; 
+    border-radius: 50%; 
+   margin-top: 130px;
+   object-fit: cover;
+  margin-bottom: 80px;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+.start{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 80px;
+    
+}
+.intro {
+    font-size: 18px;
+    color: white;
+
+    
+}
+
+.name {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.role {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.botm{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn{
+    padding: 15px 25px;
+    font-size: 16px;
+    background-color: rgb(65, 77, 134);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: rgb(52, 61, 107);  
+}
+
+.btncv{
+    padding: 15px 25px;
+    font-size: 16px;
+    color: white;
+    border: 1.5px solid white;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btncv:hover {
+    background-color: rgb(52, 61, 107); 
+    color: white; 
+    border-color: rgb(52, 61, 107); 
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .nav-links {
@@ -86,7 +174,7 @@
         position: absolute;
         top: 60px;
         right: 0;
-        background: #393E46;
+        background: #1b263b  ;
         width: 200px;
         text-align: center;
         border-radius: 5px;
@@ -101,8 +189,56 @@
     .nav-links li {
         margin: 17px 0;
     }
-
+    
+    .logo{
+        padding-left: 0px;
+    }
     .menu-icon {
         display: block;
     }
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:15px;
+        gap:0px;
+    }
+
+    .profile {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 0px;
+        object-fit: cover;
+       margin-bottom: 30px;
+    }
+
+    .start {
+        text-align: center;
+        
+
+    }
+
+    .name {
+        font-size: 36px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+
+    .role {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+       
+
+    }
+    .intro {
+        font-size: 20px; 
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
 }
+
