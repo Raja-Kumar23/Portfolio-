@@ -184,13 +184,6 @@ html {
 }
 
 
-
-
-
-
-
-
-
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -213,7 +206,7 @@ html {
     .nav-links li {
         margin: 17px 0;
     }
-    
+     
    
     .menu-icon {
         display: block;
